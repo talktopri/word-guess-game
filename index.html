@@ -4,43 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Jolly+Lodger" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Guess this word: Harry Potter Edition</title>
 </head>
 <body>
     <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-          </div>
-    <div class="container">
-        <div id="game-instructions">
-        Your goal is to guess what word we are thinking of. The word is related to the Harry Potter books and movies.
-        Type a letter to start guessing the word!
+        <div class="animation" style="position:relative;"><iframe src="https://giphy.com/embed/Bh3YfliwBZNwk" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
-        <h2>Aparecium!</h2>
+
+        <div class="container text-white">
+            <h1 class="display-4">Hello, there, fellow Legilimens!</h1>
+            <p class="lead">Your job is to use the art of Legilimency to enter this computer's mind and guess what the secret word is.</p>
+            <p class="lead1">The secret word is related to the Harry Potter books and movies.</p>
+            <hr class="my-4">
+        </div>    
+            <p class="pre-button">If you solemly swear that you are up to no good, press the button to start!</p>
+            <button id="new-game">New Spell</button>
+            
+    
+    </div>    
+    <div class="container">
+        <div class="row top">
+            <div class="col-12">
+                    <div id="game-not-running"></div>
+                    <div id="letter-already-picked"></div>
+                    <h2>Aparecium!</h2>
             </br>
-                <span id="placeholder-text"></span>
-        <h2>
-            Wins: <span id="wins-text">0</span>
-        </h2>
-        </br>
-        <h2>Losses: <span id="losses-text">0</span>
-        </h2>  
-        </br>  
-        <h3>
-            Guesses left: <span id="guesses-left">0</span>
-        </h3>    
-        <h2>Incorrect Letters Guessed: <span id="guessed-letters-text"></span>
-        </h2>    
-        <div id="game-over"></div>
-        <div id="you-win"></div>
-        <button id="new-game">Start a new game</button>
-        <div id="game-not-running"></div>
-        <div id="letter-already-picked"></div>
+                    <span id="placeholder-text"></span>
+            </div>
+        </div>
+        <div class="row middle">
+            <div class="col-6 middle-left">
+                <h3>Incorrect Letters Guessed: <span id="guessed-letters-text"></span></h3>  
+            </div>
+            <div class="col-6 middle-right">
+                <h3>Guesses left: <span id="guesses-left">0</span></h3>        
+            </div>
+        </div>
+        <div class="row bottom">
+            <div class="col-6 bottom-left">
+                    <h3>Wins: <span id="wins-text"></span></h3>  
+                </div>
+                <div class="col-6 bottom-right">
+                    <h3>Losses: <span id="losses-text">0</span></h3>        
+                </div>
+        </div>
+        
+          
+        <!-- <div id="game-over"></div>
+        <div id="you-win"></div> -->
+        
+        
         
     </div>
     <script src="./assets/javascript/game.js"></script>  
