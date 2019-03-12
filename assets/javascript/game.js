@@ -25,8 +25,8 @@ var incorrectGuesses = [];//array to hold the incorrect letters and show it back
 
 
 // Game sounds
-var newGameSound = new Audio("/Users/talktopri 1/Desktop/UCF-BootCamp/word-guess-game/assets/sounds/newGameSound.mov");
-var winSound = new Audio("/Users/talktopri 1/Desktop/UCF-BootCamp/word-guess-game/assets/sounds/winSound.mov")
+var newGameSound = new Audio("https://github.com/talktopri/word-guess-game/blob/master/assets/sounds/newGameSound.mov");
+var winSound = new Audio("https://github.com/talktopri/word-guess-game/blob/master/assets/sounds/winSound.mov")
 
 //this starts the game. Sets all values to empty when applicable, or to their initial values (like guessesLeft)
 function newGame () {
